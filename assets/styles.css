@@ -1,0 +1,817 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*estilização do header*/
+
+
+.logot{
+    height: 80px;
+    width: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0000004a;
+    color: white;
+    position: fixed; 
+    top: 0; 
+     width: 100%; 
+     backdrop-filter: blur(25px);
+     z-index: 1;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: fixed;
+    right: 55px;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.nav-item:hover{
+    
+    border-color: #c78c19;
+    transform: scale(1.1);
+    text-decoration: underline rgb(80, 255, 176);
+    text-shadow: rgb(80, 255, 176) 0px 0px 10px ;
+    transition: .2s;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+/*estilização da section 1 */
+.wel-container {
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/imagens/WEL.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wel-content {
+    width: 80%;
+   
+}
+
+strong{
+    font-size: 35px;
+    color: #0dfbdb;
+    
+ 
+}
+
+.wel-card{
+   
+    height: 350px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    position: relative;
+}
+
+
+.wel-sinopse {
+    
+    color: #fff;
+    font-size: 20px;
+    text-align:center;
+    font-family: 'Edu QLD Beginner', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 590px;
+    height: 320px;
+    background-color: #ffffff25;
+    backdrop-filter: blur(10px);
+    padding: 30px 30px;
+    border-radius: 18px;
+    box-shadow: 15px 11px 35px #000000;
+    margin-left: 25%;
+    
+}
+
+
+
+/*estilização da section 2 */
+
+.profile-container {
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/imagens/conect.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+.profile-content {
+    width: 30%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 490px;
+    background-color: rgba(255, 255, 255, 0.533);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 15px 11px 35px #ffffff;
+    color: rgb(0, 0, 0);
+    margin-top: -15%;
+    
+}
+
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #1596a4;
+    box-shadow: 15px 11px 12px #000000;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    
+}
+
+.name-text {
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 40px;
+    margin-top: 45px;
+    text-shadow: 0px 0px 7px #1596a4;
+    color: rgb(0, 0, 0);
+}
+
+
+.profile-text {
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 17px;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.profile-button {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #1e00ff4a;
+    color: #fff;
+    font-family: 'Edu QLD Beginner', cursive;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+
+.profile-button:hover {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #0e045dbf;
+    color: #f11111;
+    font-family: 'Edu QLD Beginner', cursive;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    border-top: .5px solid #ffffff;
+    margin: 20px 0;
+}
+
+.icons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon-item {
+    width: 80px;
+    height: auto;
+}
+
+.profile-sinopse {
+    width: 500px;
+     color: #fff;
+    font-size: 20px;
+    text-align:left;
+    font-family: 'Edu QLD Beginner', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
+    height: 320px;
+    background-color: #0000007a;
+    backdrop-filter: blur(25px);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 15px 11px 35px #000000;
+    color: rgb(255, 255, 255);
+    margin-top: -4%;
+    
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+
+/*estilização da section 3 */
+#section3{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('/imagens/olho.webp');
+    height: 100vh;
+    
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+h2.titulo span {
+    color: rgb(20, 228, 190);
+}
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 520px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 4%;
+    
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0eefb752;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+/*estilização da section 4 */
+.bg-image{
+background-image: url('/imagens/contato.webp');
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+filter: blur(15px);
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.contact-image {
+    max-width: 500px;
+    max-height: 500px;
+    margin-right: 50px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 8%;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width:400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.379);
+    padding: 10px 25px;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    margin-top: 7%;
+    
+    
+    
+}
+
+.contact-form label {
+    margin-bottom: 3px;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    
+}
+
+
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+    border-radius: 10px;
+}
+
+.tit{
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffffff47;
+    background-position-x: center;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+/*estilizacao footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 5px 15px;
+    background-color: #0000003e;
+    backdrop-filter: blur(15px);
+    
+    color: #ffffff;
+}
+
+.social-icons a {
+    color: #000000;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.social-icons a:hover {
+    color: #10e8c8;
+    text-shadow: rgb(0, 0, 0) 0 0px 10px;
+  
+}
+
+.copyright-info p {
+    margin: 0;
+    color: black;
+    text-align:center;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    /*estilização responsividade section 1*/
+
+    .wel-container {
+        color: #333;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('/imagens/wel.webp');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+       strong{
+        font-size: 20px;
+        color: #0dfbdb;
+        text-align: center;
+        
+    }
+    
+    .wel-card{
+       
+        height: 220px;
+        animation: flutuar 2s ease-in-out infinite alternate;
+        position: relative;
+        margin-right: 560px;
+    }
+    
+    
+    .wel-sinopse {
+        
+        color: #fff;
+        font-size: 12px;
+        text-align:justify;
+        font-family: 'Edu QLD Beginner', cursive;
+        display:grid;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 220px;
+        background-color: #00000060;
+        backdrop-filter: blur(10px);
+        
+        border-radius: 18px;
+        box-shadow: 15px 11px 35px #000000;
+        
+        
+    }
+
+/*estilização responsividade menu*/
+    .nav-bar {
+        padding: 1.5rem 1rem;
+    }
+    .logot{
+        height: 50px;
+        width: 70px;
+        padding-right: 250px;
+    }
+    .nav-item {
+        display: none;
+       
+    }
+   
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-right: 30px;
+        
+        
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 0.2rem;
+    }
+    
+    .nav-link{
+        font-size: 12px;
+        
+    }
+    
+    .open {
+        display: block;
+    }
+
+    
+
+/*estilização responsividade section 2*/
+
+.content-container {
+    width:100%;
+    height: 100vh;
+    display: flex;
+    grid-template-columns: repeat(1fr, 1);
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    
+}
+
+.profile-content{
+    align-items: center;
+    justify-items: center;
+    
+
+}
+
+
+.profile-card {
+    width: 300px;
+    padding-top: 40px;
+    background-color: rgba(17, 240, 54, 0.766);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 200px;
+    
+}
+
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #1596a4;
+    box-shadow: 15px 11px 12px #000000;
+    margin-top: -15px;
+}
+
+.name-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin-top: 35px;
+    text-shadow: 0px 0px 7px #1596a4;
+    color: rgb(255, 255, 255);
+}
+
+.profile-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    width: 80%;
+    margin-top: 10px;
+    color: white;
+}
+
+.profile-button {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #1e00ff4a;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    border-top: .5px solid #4f4f4f;
+    margin: 10px 0;
+}
+
+.icons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon-item {
+    width: 28px;
+    height: auto;
+}
+
+.profile-sinopse {
+    margin-top: 400px;
+    margin-left: -95px;
+    
+    color: #fff;
+    font-size: 11px;
+    text-align:left;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    height: 150px;
+    background-color: #00000040;
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: -15px 11px 35px #ffffff;
+    color: rgb(255, 255, 255);
+    
+
+
+}
+
+/*estilização responsividade section 3*/
+
+.img-port {
+    width: 260px;
+    height: 320px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 20%;
+    margin-left: 2%;
+    
+}
+
+.interface{
+    padding-top: 140px;
+}
+
+.titulo{
+    padding-top: 200px;
+}
+
+.profile-card {
+    width: 200px;
+    height: 310px;
+    background-color: rgba(0, 0, 0, 0.495);
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+/*estilização responsividade section 4*/
+
+.contact-image {
+   display: none;
+    
+}
+.tit{
+    text-align: center;
+    padding: 5px;
+    margin-top: 35px;
+    background-color: #ffffff47;
+    background-position-x: center;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 25px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.contact-form {
+  align-items: center;
+  margin-top: 2px;
+  margin-top: 100px;
+    
+    
+}
+.contact-form label {
+    margin-bottom: 3px;
+    color: white;
+    margin-right: 80%;
+    
+    
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    width: 100%;
+    
+}
+
+.social-icons a {
+    color: #000000;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+}
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roger Designer</title>
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>   
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img class="logot" src="/imagens/logot.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#section1" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#section2" class="nav-link">Sobre mim</a></li>
+                    <li class="nav-item"><a href="#section3" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#section4" class="nav-link">Contato</a></li>
+
+                </ul>
+            </div>
+           
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/imagens/menu_white_36dp.svg" alt="dfd"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#section1" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#section2" class="nav-link">Sobre mim</a></li>
+                <li class="nav-item"><a href="#section3" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#section4" class="nav-link">Contato</a></li>
+            </ul>
+       </div>
+
+       
+    </header>
+
+    <div id="section1" class="section">
+        <div class="content-container1">
+            <div class="wel-container">
+                <div class="wel-content">
+                    <div class="wel-card" data-aos="zoom-in" data-aos-anchor-placement="top-center" >                  
+                        <p class="wel-sinopse">
+                            <strong>Bem vindo ao meu site de web-designer!</strong>
+                        <br>
+                        <br>
+                            Estou muito felize em recebê-lo aqui, onde a arte e a tecnologia se unem para criar experiências digitais incríveis.
+                            Ao escolher minha equipe de web-designers, você terá acesso a profissionais talentosos e experientes, que dominam as últimas tendências e tecnologias do mercado. Desde a concepção do layout até a programação personalizada, cuidamos de todos os aspectos do processo de criação do seu site, garantindo que ele seja único, funcional e esteticamente atraente.
+                            
+                        </p> 
+                        
+                    </div>
+                </div>
+    
+              
+            </div>
+        </div>
+    </div>
+    <div id="section2" class="section">
+        <div class="content-container">
+            <div class="profile-container">
+                <div class="profile-content">
+                    
+                    <div class="profile-card" data-aos="fade-right">
+                        <img class="profile-image" src="/imagens/Roger.jpg" data-aos="zoom-in" data-aos-delay="800" />
+                        <span class="name-text" data-aos="fade-up" data-aos-delay="500">Roger Eduardo</span>
+                        <span class="profile-text" data-aos="zoom-out" data-aos-delay="800">
+                            Foco, disciplica e consistência.
+                            Vamos revolucionar o mercado de tecnologia juntos?
+                        </span>
+                        <a href="https://instagram.com/roger.cps82?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" >
+                            <button class="profile-button" data-aos="fade-in" data-aos-delay="800">
+                                Conhecer insta!
+                            </button>
+                        </a>
+                        <div class="divider"></div>
+                        <div class="icons-container">
+                            <img class="icon-item" src="/imagens/script.png" data-aos="zoom-in" data-aos-delay="600" alt/>
+                            <img class="icon-item" src="/imagens/atom.png"data-aos="zoom-in" data-aos-delay="900"  alt/>
+                            <img class="icon-item" src="/imagens/nod.png"data-aos="zoom-in" data-aos-delay="1000"  alt/>
+                            <img class="icon-item" src="/imagens/html.png"data-aos="zoom-in" data-aos-delay="1200" alt/>
+                            <img class="icon-item" src="/imagens/css.png"data-aos="zoom-in" data-aos-delay="1400" alt/>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="profile-sinopse" data-aos="fade-left" data-aos-delay="800">
+                    Programador ousado, Sempre engajado na transformação e evolução tecnológica. 
+                    Atuo focado no ecossistema HTML, CSS, Javascript com React, React-native e Node.Desenvolvedor dedicado com 4 anos de experiência. 
+                    Tenho experiência em Java, Python e C#, programando diversos tipos de aplicações para os clientes da Empresa X, desde soluções financeiras até aplicações desktop. 
+                    Com foco em otimizar processos, reduzi o tempo de testes em 20%, sem perder qualidade. 
+                    Na sua empresa, buscarei oportunidades semelhantes para otimizar processos.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="section3" class="section">
+        <div class="interface">
+            <h2 class="titulo">Ultimos <span>Projetos.</span></h2>
+            <div class="flex">
+                <div class="img-port" style="background-image: url(/imagens/imagem.webp);">
+                    <div class="overlay">Projeto 1</div>
+                </div>
+                <div class="img-port" style="background-image: url(/imagens/home-1.jpg);">
+                    <div class="overlay">Projeto 2</div>
+                </div>
+                <div class="img-port" style="background-image: url(/imagens/homepage.jpg);">
+                    <div class="overlay">Projeto 3</div>
+                </div>
+            </div><!--flex-->
+        </div><!--interface-->
+        
+
+    </div>
+    <div id="section4" class="section">
+        
+        <div class="container">
+            <div class="bg-image"></div>
+            <img src="/imagens/cont.webp" alt="Imagem de Contato" class="contact-image" data-aos="fade-right">
+            <form method="POST" action="envia.php" class="contact-form" data-aos="fade-left">
+                <h2 class="tit">Contato</h2>
+                <label for="name" data-aos="fade-left" >Nome:</label>
+                <input type="text" id="name" name="nome" required>
+                
+                <label for="email" data-aos="fade-left">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject" data-aos="fade-left">Assunto:</label>
+                <input type="text" id="subject" name="assunto" required>
+                
+                <label for="message" >Mensagem:</label>
+                <textarea id="message" name="mensagem" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+                 
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/roger.eduardo.98?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/your-username/your-repo" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/roger.cps82?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/RogerEdu" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="http://www.linkedin.com/in/roger-eduardo-75295a137"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="copyright-info">
+            <p>&copy; 2022 Copyright. All rights reserved.</p>
+            <p>Desenvolvido por: Roger Designer</p>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+        duration:1000,
+    })</script>
+</body>
+</html>
